@@ -16,3 +16,7 @@ It covers the following tips:
 - [How To Convert CFStringRef into std::string](https://dennisbabkin.com/blog/?t=macos-programming-critical-sections-reader-writer-locks-login-sessions-root-strings#str_conv)
 - [How To Check If Process Is Running As Root](https://dennisbabkin.com/blog/?t=macos-programming-critical-sections-reader-writer-locks-login-sessions-root-strings#is_root)
 
+---------------
+
+Please send your suggestions and corrections [here](https://dennisbabkin.com/sfb/?what=bug&name=macOS-tips-part-1&ver=Guthub).
+
