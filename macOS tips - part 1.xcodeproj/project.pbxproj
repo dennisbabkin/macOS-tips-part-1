@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A46BAC922A3612F00011E54E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A46BAC912A3612F00011E54E /* main.cpp */; };
+		A46BACA22A36141A0011E54E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46BACA12A36141A0011E54E /* CoreFoundation.framework */; };
+		A46BACA42A36141F0011E54E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46BACA32A36141F0011E54E /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,17 @@
 /* Begin PBXFileReference section */
 		A46BAC8E2A3612F00011E54E /* macOS tips - part 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "macOS tips - part 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46BAC912A3612F00011E54E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A46BAC982A3613C20011E54E /* test_synched_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_synched_data.h; sourceTree = "<group>"; };
+		A46BAC992A3613C20011E54E /* critical_section.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = critical_section.h; sourceTree = "<group>"; };
+		A46BAC9A2A3613C20011E54E /* rdr_wrtr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rdr_wrtr.h; sourceTree = "<group>"; };
+		A46BAC9B2A3613C20011E54E /* CFString_conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFString_conv.h; sourceTree = "<group>"; };
+		A46BAC9C2A3613C20011E54E /* test_reader_writer_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_reader_writer_class.h; sourceTree = "<group>"; };
+		A46BAC9D2A3613C20011E54E /* synched_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = synched_data.h; sourceTree = "<group>"; };
+		A46BAC9E2A3613C20011E54E /* test_cs_class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_cs_class.h; sourceTree = "<group>"; };
+		A46BAC9F2A3613C20011E54E /* interactive_login_sess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = interactive_login_sess.h; sourceTree = "<group>"; };
+		A46BACA12A36141A0011E54E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A46BACA32A36141F0011E54E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A46BACA52A36155E0011E54E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46BACA42A36141F0011E54E /* SystemConfiguration.framework in Frameworks */,
+				A46BACA22A36141A0011E54E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +56,10 @@
 		A46BAC852A3612F00011E54E = {
 			isa = PBXGroup;
 			children = (
+				A46BACA52A36155E0011E54E /* README.md */,
 				A46BAC902A3612F00011E54E /* macOS tips - part 1 */,
 				A46BAC8F2A3612F00011E54E /* Products */,
+				A46BACA02A36141A0011E54E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +74,26 @@
 		A46BAC902A3612F00011E54E /* macOS tips - part 1 */ = {
 			isa = PBXGroup;
 			children = (
+				A46BAC9B2A3613C20011E54E /* CFString_conv.h */,
+				A46BAC992A3613C20011E54E /* critical_section.h */,
+				A46BAC9F2A3613C20011E54E /* interactive_login_sess.h */,
+				A46BAC9A2A3613C20011E54E /* rdr_wrtr.h */,
+				A46BAC9D2A3613C20011E54E /* synched_data.h */,
+				A46BAC9E2A3613C20011E54E /* test_cs_class.h */,
+				A46BAC9C2A3613C20011E54E /* test_reader_writer_class.h */,
+				A46BAC982A3613C20011E54E /* test_synched_data.h */,
 				A46BAC912A3612F00011E54E /* main.cpp */,
 			);
 			path = "macOS tips - part 1";
+			sourceTree = "<group>";
+		};
+		A46BACA02A36141A0011E54E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A46BACA32A36141F0011E54E /* SystemConfiguration.framework */,
+				A46BACA12A36141A0011E54E /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
