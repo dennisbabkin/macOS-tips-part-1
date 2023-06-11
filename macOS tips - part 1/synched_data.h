@@ -9,7 +9,7 @@
 //
 //      https://dennisbabkin.com/blog/?i=AAA11400
 //
-//  Demonstration of a template class for synchorized access to data
+//  Demonstration of a template class for synchronized access to data
 //
 
 
